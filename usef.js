@@ -68,6 +68,9 @@ function addChild(father,equal){
 	}else if(equal=="li"){
 		var text=document.createTextNode("新添加-li");
 		child=document.createElement("li");
+	}else if(equal=="canvas"){
+		child=document.createElement("canvas");
+		child.background='blue';
 	}else if(equal=="img"){
 		var text=document.createTextNode("新添加-img");
 		child=document.createElement("img");
