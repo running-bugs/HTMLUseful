@@ -25,3 +25,18 @@ style='z-index:-10/20/999'
 or
 getElement().zIndex='10';
 ```
+设置标签内文字位置(相对)
+```
+style='text-alight:left/center/right'
+```
+设置标签本身位置(相对)
+```
+style='float:left/center/right'
+```
+设置标签本身位置(绝对(相对父标签))
+```
+style='
+    position:absolute;
+    top/bottom/left/right:20px;
+'
+```
