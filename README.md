@@ -8,3 +8,13 @@
 
 [HTML 内联框架](/iframe.md)
 
+## css 小技巧
+
+设置圆形头像
+```
+<style>
+
+    .to{width:100px;height:100px; border-radius:100px}
+
+</style>
+```
