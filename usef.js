@@ -33,8 +33,12 @@ function getElement(state,status){
 *			var img=addChild(document.getElementsByTagName("body")[0],'img').src='/img/demo.jpg';
 *			img.style.min-width="200px";
 *			img.style.max-height="200px";
+*	lg :
+*			var div=this.addChild(body,"<img id='img' src='/img.jpg'>");
+*			var img2=this.getElement("id",'img');
+*			img2.style.width='200px';
 *
-*		实现标签	<div> <p> <button> <img> <a> <Textarea>
+*		实现标签	<div> <p> <button> <img> <a> <Textarea> <script> <ul> <ol> <li> <table> <tr> <td> <iframe>
 ***/
 
 function addChild(father,equal){
