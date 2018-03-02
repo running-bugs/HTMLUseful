@@ -1,4 +1,4 @@
-/***
+﻿/***
 *
 	将 byid 与 bytagname 合并
 	函数为 getElement(String state,String status);
@@ -39,27 +39,46 @@ function getElement(state,status){
 
 function addChild(father,equal){
 	var child=null;
-	if(equal=="div"){
-		var text=document.createTextNode("新添加-p");
+	if(equal=="script"){
+		child=document.createElement("script");
+	}else if(equal=="div"){
+		var text=document.createTextNode("新添加-div");
 		child=document.createElement("div");
+	}else if(equal=="table"){
+		child=document.createElement("table");
+	}else if(equal=="tr"){
+		child=document.createElement("tr");
+	}else if(equal=="td"){
+		var text=document.createTextNode("新添加-td");
+		child=document.createElement("td");
 	}else if(equal=="p"){
 		var text=document.createTextNode("新添加-p");
 		child=document.createElement("p");
-	}else if(equal=="button"){
-		var text=document.createTextNode("新添加-button");
-		child=document.createElement("button");
+	}else if(equal=="a"){
+		var text=document.createTextNode("新添加-a");
+		child=document.createElement("a");
+	}else if(equal=="ul"){
+		child=document.createElement("ul");
+	}else if(equal=="ol"){
+		child=document.createElement("ol");
+	}else if(equal=="li"){
+		var text=document.createTextNode("新添加-li");
+		child=document.createElement("li");
 	}else if(equal=="img"){
 		var text=document.createTextNode("新添加-img");
 		child=document.createElement("img");
 	}else if(equal=="Textarea"){
 		var text=document.createTextNode("新添加-Textarea");
 		child=document.createElement("Textarea");
-	}else if(equal=="a"){
-		var text=document.createTextNode("新添加-a");
-		child=document.createElement("a");
+	}else if(equal=="button"){
+		var text=document.createTextNode("新添加-button");
+		child=document.createElement("button");
+	}else if(equal=="vedio"){
+		var text=document.createTextNode("新添加-vedio");
+		child=document.createElement("vedio");
 	}else{
 		child=document.createElement("div");
-		child.innerHTML="返回新添加 div"+equal;
+		child.innerHTML=equal;
 	}
     
 	if(text!=null)
