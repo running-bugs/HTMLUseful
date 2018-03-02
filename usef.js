@@ -58,8 +58,8 @@ function addChild(father,equal){
 		var text=document.createTextNode("新添加-a");
 		child=document.createElement("a");
 	}else{
-		father.innerHTML=father+"返回父类"+equal;
-		return father;
+		child=document.createElement("div");
+		child.innerHTML="返回新添加 div"+equal;
 	}
     
 	if(text!=null)
