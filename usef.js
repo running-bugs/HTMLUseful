@@ -58,12 +58,13 @@ function addChild(father,equal){
 		var text=document.createTextNode("新添加-a");
 		child=document.createElement("a");
 	}else{
-		console.log("本函数未实现该标签");
-		return ;
+		father.innerHTML="返回父类"+equal;
+		return father;
 	}
     
-    father.appendChild(child);
-	child.appendChild(text);
+	if(text!=null)
+		child.appendChild(text);
+	father.appendChild(child);
 
 	return child;
 }
