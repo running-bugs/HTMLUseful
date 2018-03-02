@@ -70,7 +70,7 @@ function addChild(father,equal){
 		child=document.createElement("li");
 	}else if(equal=="canvas"){
 		child=document.createElement("canvas");
-		child.background='blue';
+		child.style.background='blue';
 	}else if(equal=="img"){
 		var text=document.createTextNode("新添加-img");
 		child=document.createElement("img");
