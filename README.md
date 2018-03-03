@@ -40,4 +40,11 @@ style='
     top/bottom/left/right:20px;
 '
 ```
+设置某标签(块区域)不可见
+```
+style="
+    display:none; //不可见
+            block;//可见
+"
+```
 
