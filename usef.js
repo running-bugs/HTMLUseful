@@ -6,14 +6,29 @@
 		 getElement("id","id");
 *
 ***/
+function getElement(text){
+	var element=null;
+	var pattern=/ |\.|-/;
+	var equal=text.split(pattern);
+	
+	if(equal[0]=="tags"){
+		return document.getElementsByTagName(equal[1]);
+	}else if(equal[0]=="id"){
+		return document.getElementById(equal[1]);
+	}
+}
 
 function getElement(state,status){
 	//state : 说明	status : 身份
 	var element=null;
+	var patt=new RegExp("[a-zA-Z]{1,9}");
+	
 	if(state=="id"){
 		element=document.getElementById(status);
-	}else if((state=="em")|(state=="elements")|(state=="tags")){
+	}else if(state=="tags"){
 		element=document.getElementsByTagName(status);
+	}else if(patt.exec(state)==null){
+		element=state.getElementsByTagName(status);
 	}else{
 		alert("state错误");
 	}
