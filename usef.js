@@ -36,13 +36,13 @@ function documentGetElement(text){
 function gradationGetElement(state,status){
 	//state : 说明	status : 身份
 	var element=null;
-	var patt=new RegExp("[a-zA-Z]{1,9}");
-	
+	var patt=new RegExp("<[^>]+>");
+
 	if(state=="id"){
 		element=document.getElementById(status);
 	}else if(state=="tags"){
 		element=document.getElementsByTagName(status);
-	}else if(patt.exec(state)==null){
+	}else if(patt.exec(state.innerHTML)!=null){
 		element=state.getElementsByTagName(status);
 	}else{
 		alert("state错误");
