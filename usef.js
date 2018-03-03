@@ -1,17 +1,24 @@
 ﻿/***
 *
 	将 byid 与 bytagname 合并
-	函数为 getElement(String state,String status);
+	
+	函数为 getElement(string text);
+	lg : getElement("id.div");
+	getElement("id div");
+	getElement("id-div");
+	
+	函数为 getElement(String state,String status); / getElement(object state,String status);
 	lg : getElement("tags","body");
-		 getElement("id","id");
+	     getElement("id","id");
+	     getElement(div,"a");
 *
 ***/
 
-function getElement(){
+function getElement(c1,c2){
 	if(arguments.length==1)
-		return documentGetElement(text);
+		return documentGetElement(c1);
 	else if(arguments.length==2)
-		return gradationGetElement(state,status);
+		return gradationGetElement(c1,c2);
 }
 
 function documentGetElement(text){
