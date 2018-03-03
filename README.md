@@ -10,6 +10,13 @@
 
 ## HTML 小技巧
 
+强制使用某样式
+```
+style="
+    background:red !important; //将强制使用该样式
+    background:blue;
+"
+```
 设置圆形头像
 ```
 css
