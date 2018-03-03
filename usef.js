@@ -6,15 +6,17 @@
 		 getElement("id","id");
 *
 ***/
-function getElement(text){
-	var element=null;
-	var pattern=/ |\.|-/;
-	var equal=text.split(pattern);
-	
-	if(equal[0]=="tags"){
-		return document.getElementsByTagName(equal[1]);
-	}else if(equal[0]=="id"){
-		return document.getElementById(equal[1]);
+var d={
+	function getElement(text){
+		var element=null;
+		var pattern=/ |\.|-/;
+		var equal=text.split(pattern);
+
+		if(equal[0]=="tags"){
+			return document.getElementsByTagName(equal[1]);
+		}else if(equal[0]=="id"){
+			return document.getElementById(equal[1]);
+		}
 	}
 }
 
