@@ -6,21 +6,27 @@
 		 getElement("id","id");
 *
 ***/
-var d={
-	function getElement(text){
-		var element=null;
-		var pattern=/ |\.|-/;
-		var equal=text.split(pattern);
 
-		if(equal[0]=="tags"){
-			return document.getElementsByTagName(equal[1]);
-		}else if(equal[0]=="id"){
-			return document.getElementById(equal[1]);
-		}
+function getElement(){
+	if(arguments.length==1)
+		documentGetElement(text);
+	else if(arguments.length==2)
+		gradationGetElement(state,status);
+}
+
+function documentGetElement(text){
+	var element=null;
+	var pattern=/ |\.|-/;
+	var equal=text.split(pattern);
+
+	if(equal[0]=="tags"){
+		return document.getElementsByTagName(equal[1]);
+	}else if(equal[0]=="id"){
+		return document.getElementById(equal[1]);
 	}
 }
 
-function getElement(state,status){
+function gradationGetElement(state,status){
 	//state : 说明	status : 身份
 	var element=null;
 	var patt=new RegExp("[a-zA-Z]{1,9}");
