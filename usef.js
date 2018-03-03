@@ -9,9 +9,9 @@
 
 function getElement(){
 	if(arguments.length==1)
-		documentGetElement(text);
+		return documentGetElement(text);
 	else if(arguments.length==2)
-		gradationGetElement(state,status);
+		return gradationGetElement(state,status);
 }
 
 function documentGetElement(text){
