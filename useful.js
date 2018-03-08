@@ -106,6 +106,9 @@ function addChild(father,equal){
 	}else if(equal=="Textarea"){
 		var text=document.createTextNode("新添加-Textarea");
 		child=document.createElement("Textarea");
+	}else if(equal=="iframe"){
+		var text=document.createTextNode("新添加-iframe");
+		child=document.createElement("iframe");
 	}else if(equal=="button"){
 		var text=document.createTextNode("新添加-button");
 		child=document.createElement("button");
