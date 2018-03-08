@@ -76,7 +76,6 @@ function addChild(father,equal){
 	if(equal=="script"){
 		child=document.createElement("script");
 	}else if(equal=="div"){
-		var text=document.createTextNode("新添加-div");
 		child=document.createElement("div");
 	}else if(equal=="table"){
 		child=document.createElement("table");
