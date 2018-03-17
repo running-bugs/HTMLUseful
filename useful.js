@@ -45,7 +45,7 @@ function gradationGetElement(state,status){
 	}else if(patt.exec(state.innerHTML)!=null){
 		element=state.getElementsByTagName(status);
 	}else{
-		alert("state错误");
+		alert("first string error!");
 	}
 
 	return element;
