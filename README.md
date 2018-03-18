@@ -1,6 +1,6 @@
 # HTMLUseful
 
-## 更多参考[菜鸟教程](http://www.runoob.com/)
+## 更多参考[菜鸟教程](http://m.runoob.com/)
 
 ## 更多参考[w3school](http://www.w3school.com.cn/tags/index.asp)
 
@@ -12,8 +12,33 @@
 
 [HTML 内联框架](/tag-iframe.md)
 
-## HTML 小技巧
 
+
+# HTML 小技巧
+
+## 更多参考 [js与DOM 手册](https://m.runoob.com/jsref/jsref-tutorial.html)
+
+定义一个类
+```
+T=function(){
+    this.x; //属性前面的this需要加上
+    this.y;
+    
+    this.run=function(){
+        return ++this.x;
+    };
+}
+
+var postion=new T();
+console.log(position.x);
+```
+定义一个数组
+```
+var arr=["hello","world","!!!"];
+var arr=new Array("hello","world");
+
+console.log(arr[0]);
+```
 强制使用某样式
 ```
 style="
