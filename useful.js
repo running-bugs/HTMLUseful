@@ -18,7 +18,7 @@
 
 function addChild(father,equal){
 
-	if(father!=null&&father.innerHTML!=null)
+	if(father!=null&&father.innerHTML)
 	{
 		var child=null;
 		if(equal=="script"){
@@ -202,7 +202,7 @@ function addChild(father,equal){
 		}else if(equal=="progress"){
 			child=document.createElement("progress");
 		}else if(equal=="q"){
-			child=document.createElement("Q");
+			child=document.createElement("q");
 		}else if(equal=="s"){
 			child=document.createElement("s");
 		}else if(equal=="samp"){
