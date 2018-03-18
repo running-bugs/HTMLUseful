@@ -18,8 +18,9 @@
 
 function addChild(father,equal){
 
-	if(father!=null&&father.innerHTML)
+	if(father!=null)
 	{
+		var inn=father.innerHTML;
 		var child=null;
 		if(equal=="script"){
 			child=document.createElement("script");
