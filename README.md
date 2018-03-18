@@ -39,6 +39,26 @@ var arr=new Array("hello","world");
 
 console.log(arr[0]);
 ```
+在某动作t毫秒后执行方法
+```
+function getX(){
+ return 100;
+}
+var timeout=setTimeOut(getX,3000);  //3秒后执行getX()函数 注意! getX 非getX();
+    //stTimeOut(function(){...},3000);
+
+clearTimeOut(timeout);  //中断setTimeOut方法执行
+```
+在某动作后每t毫秒为周期 重复执行方法
+```
+function getX(){
+ return 100;
+}
+var inter=setInterval(getX,3000);  //每3秒执行getX()函数 注意! getX 非getX();
+
+clearInterval(inter);  //中断setInterval方法执行
+```
+```
 强制使用某样式
 ```
 style="
@@ -69,7 +89,7 @@ style='text-alight:left/center/right'
 ```
 style='float:left/center/right'
 ```
-设置标签本身位置(绝对(相对父标签))
+设置标签本身位置(绝对)
 ```
 style='
     position:absolute;
