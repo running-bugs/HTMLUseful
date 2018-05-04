@@ -18,6 +18,8 @@
 
 ## 更多参考 [js与DOM 手册](https://m.runoob.com/jsref/jsref-tutorial.html)
 
+## JS
+
 定义一个类
 ```
 T=function(){
@@ -58,7 +60,7 @@ var inter=setInterval(getX,3000);  //每3秒执行getX()函数 注意! getX 非g
 
 clearInterval(inter);  //中断setInterval方法执行
 ```
-```
+
 强制使用某样式
 ```
 style="
@@ -66,29 +68,40 @@ style="
     background:blue;
 "
 ```
+
+## css
+
 设置圆形头像
 ```
-css
 <style>
 
     .to{width:100px;height:100px; border-radius:100px}
 
 </style>
 ```
+
+设置标签边距
+```
+style='margin-left:0px;...'
+```
+
 设置标签层次
 ```
 style='z-index:-10/20/999'
 or
 getElement().zIndex='10';
 ```
+
 设置标签内文字位置(相对)
 ```
 style='text-alight:left/center/right'
 ```
+
 设置标签本身位置(相对)
 ```
 style='float:left/center/right'
 ```
+
 设置标签本身位置(绝对)
 ```
 style='
@@ -96,6 +109,7 @@ style='
     top/bottom/left/right:20px;
 '
 ```
+
 设置某标签(块区域)不可见
 ```
 style="
@@ -103,6 +117,7 @@ style="
             block;//可见
 "
 ```
+
 去除无序列表前的黑点
 ```
 style="
